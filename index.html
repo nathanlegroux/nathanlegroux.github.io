@@ -1,157 +1,89 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Style -->
+	<link rel="stylesheet" href="css/style.css">
+	<meta http-equiv=”refresh” content=”3600" />
+	<title>Mes J, Dates </title>
+</head>
 
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
+<body>
+	<script>
+	function getJ(daytoadd) {
+		var someDate = new Date();
+		var date = new Date(someDate.setDate(someDate.getDate() + daytoadd));
+		return date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
+	}
+	</script>
+	<div class="content">
+		<div class="container">
+			<div class="col-md-6">
+				<form class="mb-5" method="post" id="contactForm" name="contactForm">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="py-2 px-4">
+								<h6>J0 = <script>
+									document.write(getJ(0));
+									</script>
+								</h6>
+							</div></br></br>
+							<div class="py-2 px-4">
+								<h6>J1 = <script>
+									document.write(getJ(1));
+									</script>
+								</h6>
+							</div></br></br>
+							<div class="py-2 px-4">
+								<h6>J2 = <script>
+									document.write(getJ(3));
+									</script>
+								</h6>
+							</div></br></br>
+							<div class="py-2 px-4">
+								<h6>J3 = <script>
+									document.write(getJ(7));
+									</script>
+								</h6>
+							</div></br></br>
+							<div class="py-2 px-4">
+								<h6>J4 = <script>
+									document.write(getJ(14));
+									</script>
+								</h6>
+							</div></br></br>
+							<div class="py-2 px-4">
+								<h6>J5 = <script>
+									document.write(getJ(21));
+									</script>
+								</h6>
+							</div></br></br>
+							<div class="py-2 px-4">
+								<h6>J6 = <script>
+									document.write(getJ(52));
+									</script>
+								</h6>
+							</div></br></br>
+	
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    
-    <!-- Style -->
-    <link rel="stylesheet" href="css/style.css">
-
-
-    <meta http-equiv=”refresh” content=”3600" />
-   <title>Mes J, Dates </title>
-
-  </head>
-  <body>
-  
-
-<script>
-function getJ(daytoadd) {
-
-var someDate = new Date();
-var date = new Date(someDate.setDate(someDate.getDate() + daytoadd));
-return date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear() ;                                            
-                                     
-}
-
-
-</script>
-
-
-
-
-
-
-
-  <div class="content">
-    
-    <div class="container">
-     
-        <div class="col-md-6">
-          <form class="mb-5" method="post" id="contactForm" name="contactForm">
-           
-           
-            <div class="row">
-              <div class="col-md-12">
-         
-
-<div class="py-2 px-4"> 
-  <h6>J0 = 
-    
-<script>
-document.write(getJ(0));
-
-
-</script>
-
-</h6>
-</div></br></br>
-
-<div class="py-2 px-4"> 
-  <h6>J1 = 
-
-    <script>
-
-document.write(getJ(1));
-
-
-</script>
-
-</h6>
-</div></br></br>
-
-<div class="py-2 px-4"> 
-  <h6>J2 = 
-<script>
-
-document.write(getJ(3));
-
-
-</script>
-</h6>
-</div></br></br>
-
-<div class="py-2 px-4"> 
-  <h6>J3 = 
-<script>
-
-document.write(getJ(7));
-
-
-</script>
-</h6>
-</div></br></br>
-
-<div class="py-2 px-4"> 
-  <h6>J4 = 
-<script>
-
-document.write(getJ(14));
-
-
-</script>
-</h6>
-</div></br></br>
-
-<div class="py-2 px-4"> 
-  <h6>J5 = 
-<script>
-
-document.write(getJ(21));
-
-</script>
-</h6>
-</div></br></br>
-
-<div class="py-2 px-4"> 
-  <h6>J6 = 
-<script>
-
-
-document.write(getJ(52));
-
-</script>
-</h6>
-</div></br></br>
-
-
-                <span class="submitting"></span>
-              </div>
-            </div>
-          </form>
-
-          
-        </div>
-      </div>
-
-    
-  </div>
-    
-    
-
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
 </html>
