@@ -23,70 +23,22 @@
   </head>
   <body>
   
-    <script>
+
+<script>
+function getJ(daytoadd) {
 
 var someDate = new Date();
-var numberOfDaysToAdd = 0;
-var result = someDate.setDate(someDate.getDate() + numberOfDaysToAdd);
-var J0 = new Date(result)
-var J0F = J0.getDay() + "/" + J0.getMonth() + "/" + J0.getFullYear() ;                                            
-                                             
+var date = new Date(someDate.setDate(someDate.getDate() + daytoadd));
+return date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear() ;                                            
+                                     
+}
 
-          </script>
 
-<script>
-
-  var someDate = new Date();
-  var numberOfDaysToAdd = 1;
-  var result = someDate.setDate(someDate.getDate() + numberOfDaysToAdd);
-  var J1 = new Date(result)
-  
-            </script>
-
-<script>
-
-  var someDate = new Date();
-  var numberOfDaysToAdd = 3;
-  var result = someDate.setDate(someDate.getDate() + numberOfDaysToAdd);
-  var J2 = new Date(result)
-  
-</script>
-                                             
-<script>
-
-  var someDate = new Date();
-  var numberOfDaysToAdd = 7;
-  var result = someDate.setDate(someDate.getDate() + numberOfDaysToAdd);
-  var J3 = new Date(result)
-  
 </script>
 
-<script>
 
-  var someDate = new Date();
-  var numberOfDaysToAdd = 14;
-  var result = someDate.setDate(someDate.getDate() + numberOfDaysToAdd);
-  var J4 = new Date(result)
-  
-</script>
 
-<script>
 
-  var someDate = new Date();
-  var numberOfDaysToAdd = 21;
-  var result = someDate.setDate(someDate.getDate() + numberOfDaysToAdd);
-  var J5 = new Date(result)
-  
-            </script>
-
-<script>
-
-  var someDate = new Date();
-  var numberOfDaysToAdd = 52;
-  var result = someDate.setDate(someDate.getDate() + numberOfDaysToAdd);
-  var J6 = new Date(result)
-  
-            </script>
 
 
 
@@ -104,24 +56,36 @@ var J0F = J0.getDay() + "/" + J0.getMonth() + "/" + J0.getFullYear() ;
 
 <div class="py-2 px-4"> 
   <h6>J0 = 
+    
 <script>
-  document.write(J0F);
+document.write(getJ(0));
+
+
 </script>
+
 </h6>
 </div></br></br>
 
 <div class="py-2 px-4"> 
   <h6>J1 = 
-<script>
-  document.write(J1);
+
+    <script>
+
+document.write(getJ(1));
+
+
 </script>
+
 </h6>
 </div></br></br>
 
 <div class="py-2 px-4"> 
   <h6>J2 = 
 <script>
-  document.write(J2);
+
+document.write(getJ(3));
+
+
 </script>
 </h6>
 </div></br></br>
@@ -129,7 +93,10 @@ var J0F = J0.getDay() + "/" + J0.getMonth() + "/" + J0.getFullYear() ;
 <div class="py-2 px-4"> 
   <h6>J3 = 
 <script>
-  document.write(J3);
+
+document.write(getJ(7));
+
+
 </script>
 </h6>
 </div></br></br>
@@ -137,7 +104,10 @@ var J0F = J0.getDay() + "/" + J0.getMonth() + "/" + J0.getFullYear() ;
 <div class="py-2 px-4"> 
   <h6>J4 = 
 <script>
-  document.write(J4);
+
+document.write(getJ(14));
+
+
 </script>
 </h6>
 </div></br></br>
@@ -145,7 +115,9 @@ var J0F = J0.getDay() + "/" + J0.getMonth() + "/" + J0.getFullYear() ;
 <div class="py-2 px-4"> 
   <h6>J5 = 
 <script>
-  document.write(J5);
+
+document.write(getJ(21));
+
 </script>
 </h6>
 </div></br></br>
@@ -153,7 +125,10 @@ var J0F = J0.getDay() + "/" + J0.getMonth() + "/" + J0.getFullYear() ;
 <div class="py-2 px-4"> 
   <h6>J6 = 
 <script>
-  document.write(J6);
+
+
+document.write(getJ(52));
+
 </script>
 </h6>
 </div></br></br>
@@ -168,57 +143,7 @@ var J0F = J0.getDay() + "/" + J0.getMonth() + "/" + J0.getFullYear() ;
         </div>
       </div>
 
-      
-      <!-- <div class="row justify-content-center">
-        <div class="col-md-10">
-          
-          <div class="row align-items-center">
-            <div class="col-lg-7 mb-5 mb-lg-0">
-
-              <h2 class="mb-5">Fill the form. <br> It's easy.</h2>
-
-              <form class="border-right pr-5 mb-5" method="post" id="contactForm" name="contactForm">
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <input type="text" class="form-control" name="fname" id="fname" placeholder="First name">
-                  </div>
-                  <div class="col-md-6 form-group">
-                    <input type="text" class="form-control" name="lname" id="lname" placeholder="Last name">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12 form-group">
-                    <input type="text" class="form-control" name="email" id="email" placeholder="Email">
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-md-12 form-group">
-                    <textarea class="form-control" name="message" id="message" cols="30" rows="7" placeholder="Write your message"></textarea>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4">
-                  </div>
-                </div>
-              </form>
-
-              <div id="form-message-warning mt-4"></div> 
-              <div id="form-message-success">
-                Your message was sent, thank you!
-              </div>
-
-            </div>
-            <div class="col-lg-4 ml-auto">
-              <h3 class="mb-4">Let's talk about everything.</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil deleniti itaque similique magni. Magni, laboriosam perferendis maxime!</p>
-              <p><a href="#">Read more</a></p>
-            </div>
-          </div>
-        </div>  
-        </div>
-      </div> -->
+    
   </div>
     
     
